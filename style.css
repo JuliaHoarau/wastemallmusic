@@ -103,7 +103,7 @@ section {
   min-height: 100vh;
   max-width: 100vw;
   background-size: cover;
-  background-color: #e3f8db;
+  background-color: #edfce7;
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -179,12 +179,13 @@ section {
 .song-name {
   font-size: 1rem;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .play-button {
   padding: 8px 16px;
-  background-color: #1DB954;
-  color: white;
+  background-color: #fff;
+  color: #1b3e0f;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -207,6 +208,7 @@ section {
 
 #about h1 {
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .about-container {
@@ -214,6 +216,11 @@ section {
   text-align: center;
   line-height: 1.6;
   color: #fff;
+}
+
+.about-container p {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 /* Artist section */
@@ -251,6 +258,15 @@ section {
 .section-h1 {
   font-family: "Ibarra Real Nova", serif;
   font-size: 3rem;
+  opacity: 0;
+  transform: translateX(0px);
+  transition: opacity 0.5s ease-out, transform 1s ease-out;
+
+}
+
+.section-h1.visible {
+  opacity: 1;
+  transform: translateY(50);
 }
 
 /* Add mobile */
@@ -302,6 +318,7 @@ section {
     flex-direction: column;
     letter-spacing: .1rem;
     background-position: center;
+
   }
 
   .navbar {
@@ -350,7 +367,7 @@ section {
     text-align: center;
     font-weight: 500;
     font-size: 1.3rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
 
@@ -380,14 +397,45 @@ section {
  
   }
 
+
+
   .song-covers {
     grid-template-columns: 1fr;
     margin-top: 50px;
     gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
   
 .song-cover {
-  width: 100%;
+  width: 80%;
+}
+
+#about {
+  background-image: url('images/vine-background.png'); /* Replace 'header-background.jpg' with your actual image path */
+  background-size: cover;
+  height: 100%;
+  max-width: 100%;
+  padding: 30px;
+}
+
+#about h1 {
+  font-weight: 500;
+}
+.about-container {
+  min-width: 100%;
+  text-align: center;
+  line-height: 1.6;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.about-container p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 }
