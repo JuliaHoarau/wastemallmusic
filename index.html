@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wastemall</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  </head>
+<body>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  <div id="embed-iframe"></div>
+
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">
+        <a href="#home"><img src="images/logo.png" alt="wastemall logo" id="header-logo"></a>
+            </div>
+            <div class="nav-links">
+          <a href="#music" class="links">Music</a>
+          <a href="#about"  class="links">About</a>
+          <a href="#contact" class="links"s>Contact</a>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <div class="latest-release">
+          <h1 class="header-h1">LATEST RELEASE</h1>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6R0DAdapkG8VISUH4Xdeip?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          
+        </div>
+        </div>
+      </div>
+
+      <section id="music">
+        <h1 class="section-h1">MUSIC</h1>
+        <div class="columns-container">
+          <div class="listen-container">
+            <h2>LISTEN</h2>
+           <div id="artist-container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/71pxoY98RFek1bvigR8ON3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          </div>
+          <div class="songs-container"> 
+            <div class="song-covers">
+            <div id="sq1"></div>
+            <div id="sq1"></div>
+            <div id="sq1"></div>
+            <div id="sq1"></div>
+          </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="about">
+        <h1 class="section-h1">ABOUT</h1>
+        <div class="about-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad, tempora rerum veritatis laudantium fuga saepe natus esse 
+          aut harum repellat voluptatum a perspiciatis soluta provident accusantium amet praesentium dolorem.ipsum dolor sit amet 
+          consectetur adipisicing elit. Illo ad, tempora rerum veritatis laudantium fuga saepe natus esse aut harum repellat voluptatum 
+          a perspiciatis soluta provident accusantium amet praesentium dolorem.
+        </div>
+        </p>
+      </section>
+      <section id="contact">
+        <div class="columns-container">
+          <div id="contact-links">
+            <h2>CONTACT</h2>
+<p>email: ipsumedelorum@email.com</p>
+<p>instagram: ipsume_delorum</p>
+<p>facebook: ipsume_delorum</p>
+          </div>
+          <div id="subscribe-container">
+ <form action="/" id="form">
+                <h2>SUBSCRIBE</h2>
+                <div class="input-control">
+                    <label for="firstname">First name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First name"
+                        pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <div class="error"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>This is the footer</footer>
+</body>
+</html>
