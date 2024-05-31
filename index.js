@@ -5,9 +5,8 @@ document.querySelectorAll('.song-cover').forEach(function (cover) {
         overlay.style.opacity = overlay.style.opacity === '1' ? '0' : '1';
     });
 });
-
 document.addEventListener('DOMContentLoaded', function () {
-    var fadeIns = document.querySelectorAll('.section-h1');
+    var fadeIns = document.querySelectorAll('.section-h1, .listen-h2'); // Added the missing '.'
 
     function checkPosition() {
         var windowHeight = window.innerHeight;
@@ -20,5 +19,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener('scroll', checkPosition);
-    checkPosition();
+    checkPosition(); // Run it once on load to ensure elements already in view are handled
 });
