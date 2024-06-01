@@ -561,4 +561,7 @@ footer {
   #contact {
     height: auto;
   }
+  .contacts {
+    height: 150px;
+  }
 }
