@@ -7,7 +7,7 @@ document.querySelectorAll('.song-cover').forEach(function (cover) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var fadeIns = document.querySelectorAll('.section-h1');
+    var fadeIns = document.querySelectorAll('.section-h1, .section-h2');
 
     function checkPosition() {
         var windowHeight = window.innerHeight;
