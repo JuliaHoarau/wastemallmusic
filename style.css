@@ -36,7 +36,7 @@ section {
   font-size: 3rem;
   opacity: 0;
   transform: translateX(0);
-  transition: opacity 0.5s ease-out, transform 1.5s ease-out;
+  transition: opacity 1s ease-out, transform 2s ease-out;
   margin-bottom: 50px;
 }
 
@@ -50,7 +50,7 @@ section {
   opacity: 0;
   font-weight: 500;
   transform: translateX(0);
-  transition: opacity 0.5s ease-out, transform 1.5s ease-out;
+  transition: opacity 1s ease-out, transform 2s ease-out;
 }
 
 .section-h2.visible {
@@ -90,7 +90,7 @@ section {
 .header-h1.animate {
     opacity: 1;
     transform: translateY(0px);
-}
+}             
 
 .header-content {
   height: 100%;
@@ -156,6 +156,17 @@ section {
   color: #fff !important;
 }
 
+#contact-container-h1 {
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 2s ease-out;
+}
+
+#contact-container-h1.visible {
+    opacity: 1;
+  transform: translateY(100);
+}
+
+
 /* Music Section */
 #artist-container {
   width: 80%;
@@ -195,6 +206,14 @@ section {
   justify-content: center;
   width: 200px;
   flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 2s ease-out;
+}
+
+.song-cover.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .song-cover img {
@@ -555,6 +574,8 @@ footer {
     max-width: 100vw;
     height: auto;;
   }
+
+
 
   #contact-links {
     width: 100vw;

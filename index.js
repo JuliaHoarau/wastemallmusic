@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }, 1000); // Adjust this delay (in milliseconds) as needed
 
-    // Existing fade-in functionality
-    var fadeIns = document.querySelectorAll('.section-h1, .section-h2');
+    // Existing fade-in functionality for section headers
+    var fadeIns = document.querySelectorAll('.section-h1, .section-h2', '#contact-container-h1');
 
     function checkPosition() {
         var windowHeight = window.innerHeight;
@@ -29,4 +29,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', checkPosition);
     checkPosition();
+
+    // IntersectionObserver for song-cover elements
+    var songCovers = document.querySelectorAll('.song-cover');
+    var musicSection = document.getElementById('music');
+
+    var observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    var observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                songCovers.forEach(function (songCover, index) {
+                    setTimeout(function () {
+                        songCover.classList.add('visible');
+                    }, index * 500); // Stagger the animations by 200ms
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    observer.observe(musicSection);
 });
