@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quattrocento:wght@400;700&family=Stoke:wght@300;400&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <body>
   <script src="https://open.spotify.com/embed/iframe-api/v1"></script>
   <div id="embed-iframe"></div>
@@ -15,7 +15,7 @@
     <div class="header">
         <nav class="navbar">
             <div class="logo">
-        <a href="#home"><img src="images/logo.png" alt="wastemall logo" id="header-logo"></a>
+              <a href="#home"><img src="images/logo.png" alt="wastemall logo" id="header-logo"></a>
             </div>
             <div class="nav-links">
           <a href="#music" class="links">Music</a>
@@ -26,7 +26,7 @@
 
         <div class="header-content">
             <div class="latest-release">
-          <h1 class="header-h1">Latest Release</h1>
+          <h1 class="header-h1" id="latest-release-h1">Latest Release</h1>
           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6R0DAdapkG8VISUH4Xdeip?utm_source=generator" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         </div>
@@ -139,9 +139,6 @@
      
       </footer>
       
-      <!-- <script>
-        // Script to dynamically update the year
-        document.getElementById("current-year").textContent = new Date().getFullYear();
-      </script> -->
+    
 </body>
 </html>
