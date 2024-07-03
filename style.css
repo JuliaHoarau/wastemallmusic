@@ -343,6 +343,11 @@ section {
   margin-right: 30px;
 }
 
+.contact-lines a {
+  color: white;
+  text-decoration: none;
+}
+
 /* footer */
 footer {
   background-color: #302F00;

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000); // Adjust this delay (in milliseconds) as needed
 
     // Existing fade-in functionality for section headers
-    var fadeIns = document.querySelectorAll('.section-h1, .section-h2', '#contact-container-h1');
+    var fadeIns = document.querySelectorAll('.section-h1, .section-h2', '.contact-lines');
 
     function checkPosition() {
         var windowHeight = window.innerHeight;
