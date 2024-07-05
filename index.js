@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Hide loading overlay when page is fully loaded
+    var loadingOverlay = document.querySelector('.loading-overlay');
+    if (loadingOverlay) {
+        window.addEventListener('load', function () {
+            loadingOverlay.style.display = 'none';
+        });
+    }
+
     // Logo animation
     var logo = document.getElementById('header-logo');
     var headerH1 = document.getElementById('latest-release-h1');
@@ -15,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000); // Adjust this delay (in milliseconds) as needed
 
     // Existing fade-in functionality for section headers
-    var fadeIns = document.querySelectorAll('.section-h1, .section-h2', '.contact-lines');
+    var fadeIns = document.querySelectorAll('.section-h1, .section-h2, .contact-lines');
 
     function checkPosition() {
         var windowHeight = window.innerHeight;
@@ -46,12 +54,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 songCovers.forEach(function (songCover, index) {
                     setTimeout(function () {
                         songCover.classList.add('visible');
-                    }, index * 500); // Stagger the animations by 200ms
+                    }, index * 500); // Stagger the animations by 500ms
                 });
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    observer.observe(musicSection);
+    if (musicSection) {
+        observer.observe(musicSection);
+    }
 });
